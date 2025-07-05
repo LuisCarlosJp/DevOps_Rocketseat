@@ -1,4 +1,4 @@
 variable "s3_bucket_name" {
-  type = string
+  type        = string
   description = "Nome do bucket"
 }
