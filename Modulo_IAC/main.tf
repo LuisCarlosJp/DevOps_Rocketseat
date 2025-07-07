@@ -18,14 +18,3 @@ module "cloudfront" {
     module.s3
   ]
 }
-
-module "sqs" {
-  source = "terraform-aws-modules/sqs/aws"
-  name = "luiscarlosjp-sqs"
-
-  create_dlq = true
-
-  tags = {
-    Iac = true
-  }
-}
