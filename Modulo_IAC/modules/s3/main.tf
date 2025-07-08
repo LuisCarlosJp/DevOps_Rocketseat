@@ -4,7 +4,7 @@ resource "aws_s3_bucket" "bucket" {
 }
 
 resource "aws_s3_bucket_website_configuration" "bucket" {
-  bucket = aws_s3_bucket.bucket
+  bucket = aws_s3_bucket.bucket.bucket
 
   index_document {
     suffix = "index.html"
